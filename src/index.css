@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply min-h-screen min-w-[320px] bg-zinc-950 text-zinc-100;
+  margin: 0;
+  background-image:
+    radial-gradient(circle at 16% 10%, rgba(244, 63, 94, 0.16), transparent 40%),
+    radial-gradient(circle at 90% 18%, rgba(148, 163, 184, 0.12), transparent 38%),
+    linear-gradient(180deg, #0a0a0b 0%, #09090b 35%, #050506 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+input[type='range'] {
+  accent-color: #fb7185;
+}
